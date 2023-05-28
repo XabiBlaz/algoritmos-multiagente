@@ -4,4 +4,4 @@ En esta sección se proporcionan varios algoritmos para búsqueda de la fuente d
 for Gradient and Hessian Estimation with Application to Source Seeking. IEEE Transactions on
 Robotics, IEEE, 2019, 35 (3), pp.782-789. ff10.1109/TRO.2019.2895509ff. ffhal-01991153f.
 
-Los archivos requeridos están en las carpetas.
+Los archivos requeridos están en las carpetas. Una descripción más profunda del trabajo realizado se halla en la carpeta "Descripción del trabajo". Ahí se puede descargar el archivo PDF del Trabajo de Fin de Grado realizado.
