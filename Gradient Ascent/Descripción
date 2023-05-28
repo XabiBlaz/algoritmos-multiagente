@@ -1,1 +1,1 @@
-En estos códigos se hace uso del algoritmo del gradiente ascendente para la búsqueda de fuentes.
+En estos códigos se hace uso del algoritmo del gradiente ascendente para la búsqueda de fuentes. Se incluye el método con la búsqueda de línea inexacta con condiciones Wolfe fuertes.
