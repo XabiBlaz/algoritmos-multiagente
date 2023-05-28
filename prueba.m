@@ -1,0 +1,20 @@
+v=2;
+d=0.1;
+N=4; %Número de robots
+D=1; %Radio de la formación
+S=10^-4*[2,1;1,1]; %Matriz
+c0=[0;0]; %Posición del centro inicial (initial guess)
+w0=1; %Movimiento circular de un radián por segundo
+for i=1:100
+    grad_centr(:,i)= gradient_point2D_ruido(c0,0,N,D,S,w0,v,d);
+    H_est(:,:,i)=Hessiano_error(c0,0,N,D,S,w0,v,d);
+end
+media1=mean(grad_centr(1,:));
+media2=mean(grad_centr(2,:));
+grad_centr_est=[media1;media2]
+grad_centr_verdad=gradient_point2D(c0,0,N,D,S,w0)
+media11H=mean(H_est(1,1,:));
+media12H=mean(H_est(1,2,:));
+media21H=mean(H_est(2,1,:));
+media22H=mean(H_est(2,2,:));
+H=[media11H,media12H;media21H,media22H]
